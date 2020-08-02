@@ -1,0 +1,17 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "indent": ["error", 2],
+    "no-console": "warn", // In console
+    "semi": ["warn", "always"], // Chấm phảy cuối câu lệnh
+    "quotes": ["error", "single"] // Quote
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-plugin-root-import": {
+        "rootPathPrefix": "~",
+        "rootPathSuffix": "./src"
+      }
+    }
+  }
+}

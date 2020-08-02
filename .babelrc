@@ -1,0 +1,32 @@
+{
+  "presets": [
+    "@babel/preset-env"
+  ],
+
+  // Setup root import
+  "plugins": [
+    [
+      "babel-plugin-root-import",      
+      {
+        "paths": [
+          {
+            "rootPathSuffix": "./src",
+            "rootPathPrefix": "~"
+          },
+          {
+            "rootPathSuffix": "./src/models",
+            "rootPathPrefix": "models"
+          },
+          {
+            "rootPathSuffix": "./src/controllers",
+            "rootPathPrefix": "controllers"
+          },
+          {
+            "rootPathSuffix": "./src/routes",
+            "rootPathPrefix": "routes"
+          },
+        ]
+      }
+    ]
+  ],
+}
